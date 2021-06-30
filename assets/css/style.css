@@ -177,13 +177,13 @@ body{
     gap: 8px;
 }
 
-.weather-wrapper__minmax, .weather-wrapper__Velocidadedosventos, .weather-wrapper__sensacao, .weather-wrapper__umidade{
+.weather-wrapper__minmax, .weather-wrapper__wind, .weather-wrapper__sensacao, .weather-wrapper__umidade{
     font-weight: 600;
     color: #444;
     margin-bottom: 8px;
 }
 
-.weather-wrapper__Velocidadedosventos span:first-child, 
+.weather-wrapper__wind span:first-child, 
 .weather-wrapper__sensacao span:first-child, 
 .weather-wrapper__umidade span:first-child{
     font-weight: 400;
