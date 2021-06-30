@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    color: #f5f5f5;
+    background: #f7b731;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-search{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    margin-top: -100px;
+}
+
+.container-search__group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.container-search__icon{
+    width: 36px;
+    height: 36px;
+}
+
+.container-search__title{
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    color: #3d3d3d;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.form{
+    margin-top: 16px;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+}
+
+.form__search{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #ddd;
+    background: #ededed;
+    padding-left: 12px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #232323;
+}
+
+.form__submit{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.form__submit svg{
+    stroke: #9d9d9d;
+}
+
+/* section-weather */
+
+.section-weather{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 16px;
+    background: #f5f5f5;
+    color: #303030;
+    order: 2;
+    margin-top: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 150px;
+    /* display: none; */
+}
+
+.weather-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.weather-wrapper__close{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.weather-wrapper__close:hover{
+    filter: brightness(0.7);
+}
+
+.weather-wrapper__close svg{
+    width: 22px;
+    height: 22px;
+    fill: #f7b731;
+}
+
+.weather-wrapper__city{
+    flex: 1;
+}
+
+.weather-wrapper__city h3{
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.weather-wrapper__temperatura h2{
+    flex: 1;
+    margin: 22px 0;
+}
+
+.weather-wrapper__temperatura h2{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.weather-wrapper__info-more{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.weather-wrapper__col{
+    width: calc(100% / 2);
+    gap: 8px;
+}
+
+.weather-wrapper__minmax, .weather-wrapper__Velocidadedosventos, .weather-wrapper__sensacao, .weather-wrapper__umidade{
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.weather-wrapper__Velocidadedosventos span:first-child, 
+.weather-wrapper__sensacao span:first-child, 
+.weather-wrapper__umidade span:first-child{
+    font-weight: 400;
+    color: #444;
+}
+
+.weather-wrapper__minmax{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.weather-wrapper__minmax span{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.weather-wrapper__minmax svg{
+    height: 18px;
+    width: 18px;
+    stroke-width: 2.5px;
+    margin-right: -3px;
+    stroke: #f7b731;
+}
+
+.weather-wrapper__temperaturaSemana{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-wrapper__temperaturaSemana .dia-name{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.weather-wrapper__temperaturaSemana .remperatura-minmax{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}

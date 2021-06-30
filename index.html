@@ -1,15 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchtime</title>
-    
+    <link rel="shortcut icon" href="./assets//img/logo.svg" type="image/svg">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+
+    <main class="welcome">
+
+        <section class="section-weather">
+            <div class="weather-wrapper">
+                <div class="weather-wrapper__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                       >
+                        <path
+                            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="weather-wrapper__city">
+                    <h3>Niterói, Rj - Brasil</h3>
+                </div>
+
+                <div class="weather-wrapper__temperatura">
+                    <h2>20ºC Nublado</h2>
+                </div>
+
+                <div class="weather-wrapper__info-more">
+                    <div class="weather-wrapper__col">
+                        <div class="weather-wrapper__minmax">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-narrow-down" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="16" y1="15" x2="12" y2="19"></line>
+                                    <line x1="8" y1="15" x2="12" y2="19"></line>
+                                </svg>
+                                <span>16º</span>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="16" y1="9" x2="12" y2="5"></line>
+                                    <line x1="8" y1="9" x2="12" y2="5"></line>
+                                </svg>
+                                <span>25º</span>
+                            </span>
+                        </div>
+
+                        <div class="weather-wrapper__Velocidadedosventos">
+                            <span>Vento</span>
+                            <span>18Km/h</span>
+                        </div>
+                    </div>
+
+
+                    <div class="weather-wrapper__col">
+                        <div class="weather-wrapper__sensacao">
+                            <span>Sensação</span>
+                            <span>19ºC</span>
+                        </div>
+                        <div class="weather-wrapper__umidade">
+                            <span>Umidade</span>
+                            <span>89%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="weather-wrapper__temperaturaSemana">
+                    <div class="weather-wrapper__dia">
+                        <div class="dia-name">Terça</div>
+                        <div class="remperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                    </div>
+                    <div class="weather-wrapper__dia">
+                        <div class="dia-name">Quarta</div>
+                        <div class="remperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                    </div>
+                    <div class="weather-wrapper__dia">
+                        <div class="dia-name">Quinta</div>
+                        <div class="remperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                    </div>
+                    <div class="weather-wrapper__dia">
+                        <div class="dia-name">Sexta</div>
+                        <div class="remperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                    </div>
+                    <div class="weather-wrapper__dia">
+                        <div class="dia-name">Sábado</div>
+                        <div class="remperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-search">
+            <div class="container-search__group">
+                <h1 class="container-search__title">Buscar cidade</h1>
+            </div>
+            <form class="form">
+                <div class="form__group">
+                    <input type="text" class="form__search" placeholder="Insira o nome da sua cidade">
+                    <button type="submit" class="form__submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="10" cy="10" r="7"></circle>
+                            <line x1="21" y1="21" x2="15" y2="15"></line>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
