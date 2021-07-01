@@ -14,10 +14,6 @@ body{
     height: 100vh;
     color: #f5f5f5;
     background: #f7b731;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .welcome{
@@ -25,10 +21,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    height: 100%;
 }
 
 .container-search{
-    width: 400px;
+    width: 100%;
+    max-width: 432px;
+    padding: 0 16px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -62,6 +62,7 @@ body{
 
 .form{
     margin-top: 16px;
+    width: 100%;
 }
 
 .form__group{
@@ -70,7 +71,7 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 400px;
+    width: 100%;
 }
 
 .form__search{
@@ -108,9 +109,10 @@ body{
 /* section-weather */
 
 .section-weather{
-    width: 400px;
+    width: calc(100% - 32px);
+    max-width: 400px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 16px;
     padding: 16px;
     background: #f5f5f5;
     color: #303030;
@@ -120,7 +122,6 @@ body{
     top: 50%;
     transform: translateY(-50%);
     margin-top: 150px;
-    /* display: none; */
 }
 
 .weather-wrapper{
@@ -221,6 +222,7 @@ body{
     border-top: 1px solid #ddd;
     padding-top: 8px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -231,7 +233,7 @@ body{
     margin-bottom: 4px;
 }
 
-.weather-wrapper__weekday .remperatura-minmax{
+.weather-wrapper__weekday .temperatura-minmax{
     display: flex;
     flex-wrap: nowrap;
     gap: 8px;
@@ -243,6 +245,35 @@ body{
     user-select: none;
     pointer-events: none;
     animation: placeholder .6s ease-in alternate infinite;
+}
+
+@media (max-width: 450px){
+    .container-search{
+        margin-top: -140px;
+    }
+    .section-weather{
+        margin-top: 165px;
+    }
+    .weather-wrapper__weekday .weather-wrapper__dia:last-child{
+        /* flex: 1; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 360px){
+    .weather-wrapper__weekday .weather-wrapper__dia:last-child, .weather-wrapper__weekday .weather-wrapper__dia:nth-child(4){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 2);
+        margin-top: 4px;
+    }
 }
 
 .loading .section-weather{
