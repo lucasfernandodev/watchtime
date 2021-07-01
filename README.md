@@ -5,4 +5,4 @@
 <p align="center">
 Um site simples desenvolvido para ver a previsão do tempo.
 </p>
-<p align="center">Veja como ficou o site <a href="https://lucasfernandodev.github.io/watchtime/">Clicando aqui</a>, a api usada é a <a href="https://console.hgbrasil.com/documentation/weather">HG Weather</a>.</p>
+<p align="center">Veja como ficou o site <a href="https://lucasfernandodev.github.io/watchtime/">clicando aqui</a>, a api usada é a <a href="https://console.hgbrasil.com/documentation/weather">HG Weather</a>.</p>
