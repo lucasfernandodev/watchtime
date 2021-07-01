@@ -12,7 +12,7 @@
 
 <body>
 
-    <main class="welcome">
+    <main class="welcome loading">
 
         <section class="section-weather">
             <div class="weather-wrapper">
@@ -25,17 +25,17 @@
                     </svg>
                 </div>
                 <div class="weather-wrapper__city">
-                    <h3>Niterói, Rj - Brasil</h3>
+                    <h3 title="Nome da cidade">Niterói, Rj - Brasil</h3>
                 </div>
 
                 <div class="weather-wrapper__temperatura">
-                    <h2>20ºC Nublado</h2>
+                    <h2 title="Temperatura & condição do tempo">20ºC Nublado</h2>
                 </div>
 
                 <div class="weather-wrapper__info-more">
                     <div class="weather-wrapper__col">
                         <div class="weather-wrapper__minmax">
-                            <span class="min">
+                            <span class="min" title="Temperatura minima">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-arrow-narrow-down" width="24" height="24"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -47,7 +47,7 @@
                                 </svg>
                                 <span>16º</span>
                             </span>
-                            <span class="max">
+                            <span class="max" title="Temperatura maxima">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -61,7 +61,7 @@
                             </span>
                         </div>
 
-                        <div class="weather-wrapper__wind">
+                        <div class="weather-wrapper__wind" title="Velocidade do vento">
                             <span>Vento</span>
                             <span class="value">18Km/h</span>
                         </div>
@@ -69,11 +69,11 @@
 
 
                     <div class="weather-wrapper__col">
-                        <div class="weather-wrapper__sensacao">
+                        <div class="weather-wrapper__data" title="Data atual">
                             <span>Data</span>
                             <span class="value">00/00/0000</span>
                         </div>
-                        <div class="weather-wrapper__umidade">
+                        <div class="weather-wrapper__umidade" title="Umidade do ar">
                             <span>Umidade</span>
                             <span class="value">89%</span>
                         </div>
@@ -81,7 +81,7 @@
                 </div>
 
 
-                <div class="weather-wrapper__temperaturaSemana">
+                <div class="weather-wrapper__weekday" title="Minima e maxima da temperatura nos dias de semana">
                     <div class="weather-wrapper__dia">
                         <div class="dayName">Terça</div>
                         <div class="remperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>

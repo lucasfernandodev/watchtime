@@ -93,10 +93,16 @@ body{
     right: 0;
     border: 1px solid #ddd;
     cursor: pointer;
+
 }
 
 .form__submit svg{
     stroke: #9d9d9d;
+    transition: 0.4s ease-in-out;
+}
+
+.form__submit:hover svg{
+    stroke:#2d2d2d;
 }
 
 /* section-weather */
@@ -128,8 +134,8 @@ body{
 
 .weather-wrapper__close{
     position: absolute;
-    right: -5px;
-    top: -5px;
+    right: -16.5px;
+    top: -15px;
     cursor: pointer;
 }
 
@@ -153,13 +159,13 @@ body{
     letter-spacing: 0.5px;
 }
 
-.weather-wrapper__temperatura h2{
+.weather-wrapper__temperatura{
     flex: 1;
     margin: 22px 0;
 }
 
 .weather-wrapper__temperatura h2{
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 
@@ -177,14 +183,14 @@ body{
     gap: 8px;
 }
 
-.weather-wrapper__minmax, .weather-wrapper__wind, .weather-wrapper__sensacao, .weather-wrapper__umidade{
+.weather-wrapper__minmax, .weather-wrapper__wind, .weather-wrapper__data, .weather-wrapper__umidade{
     font-weight: 600;
     color: #444;
     margin-bottom: 8px;
 }
 
 .weather-wrapper__wind span:first-child, 
-.weather-wrapper__sensacao span:first-child, 
+.weather-wrapper__data span:first-child, 
 .weather-wrapper__umidade span:first-child{
     font-weight: 400;
     color: #444;
@@ -209,7 +215,7 @@ body{
     stroke: #f7b731;
 }
 
-.weather-wrapper__temperaturaSemana{
+.weather-wrapper__weekday{
     width: 100%;
     height: auto;
     border-top: 1px solid #ddd;
@@ -218,15 +224,35 @@ body{
     justify-content: space-between;
 }
 
-.weather-wrapper__temperaturaSemana .dia-name{
+.weather-wrapper__weekday .dayName{
     font-size: 14px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 4px;
 }
 
-.weather-wrapper__temperaturaSemana .remperatura-minmax{
+.weather-wrapper__weekday .remperatura-minmax{
     display: flex;
     flex-wrap: nowrap;
     gap: 8px;
+}
+
+.loading p, .loading span,.loading h2, .loading h3, .loading .dayName{
+    background: #444;
+    color: #444;
+    user-select: none;
+    pointer-events: none;
+    animation: placeholder .6s ease-in alternate infinite;
+}
+
+.loading .section-weather{
+    overflow: hidden;
+    position: absolute;
+    display: none;
+}
+
+@keyframes placeholder {
+    from{
+        opacity: .75;
+    }
 }
