@@ -23,6 +23,7 @@ body{
     justify-content: center;
     height: 100%;
     height: 100%;
+    position: relative;
 }
 
 .container-search{
@@ -104,6 +105,29 @@ body{
 
 .form__submit:hover svg{
     stroke:#2d2d2d;
+}
+
+.msg{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.msg a{
+    display: inline-block;
+    text-decoration: none;
+    color: #303030;
+}
+
+.msg a:hover{
+    color: #111;
 }
 
 /* section-weather */

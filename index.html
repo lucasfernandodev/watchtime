@@ -14,11 +14,32 @@
 
     <main class="welcome loading">
 
+        <div class="container-search">
+            <div class="container-search__group">
+                <h1 class="container-search__title">Buscar cidade</h1>
+            </div>
+            <form class="form">
+                <div class="form__group">
+                    <input type="text" class="form__search" placeholder="Insira o nome da sua cidade">
+                    <button type="submit" class="form__submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="10" cy="10" r="7"></circle>
+                            <line x1="21" y1="21" x2="15" y2="15"></line>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="msg">Você pode pesquisar o local diretamente pelo seu IP, <a href="#" class="searchIp">Clicando aqui</a>.</div>
+
         <section class="section-weather">
             <div class="weather-wrapper">
                 <div class="weather-wrapper__close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                       >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path
                             d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z">
                         </path>
@@ -105,26 +126,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="container-search">
-            <div class="container-search__group">
-                <h1 class="container-search__title">Buscar cidade</h1>
-            </div>
-            <form class="form">
-                <div class="form__group">
-                    <input type="text" class="form__search" placeholder="Insira o nome da sua cidade">
-                    <button type="submit" class="form__submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <circle cx="10" cy="10" r="7"></circle>
-                            <line x1="21" y1="21" x2="15" y2="15"></line>
-                        </svg>
-                    </button>
-                </div>
-            </form>
-        </div>
     </main>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
