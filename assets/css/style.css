@@ -26,7 +26,7 @@ body{
     position: relative;
 }
 
-.container-search{
+.section-search{
     width: 100%;
     max-width: 432px;
     padding: 0 16px;
@@ -39,7 +39,7 @@ body{
     margin-top: -100px;
 }
 
-.container-search__group{
+.section-search__container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -48,18 +48,14 @@ body{
     text-align: center;
 }
 
-.container-search__icon{
-    width: 36px;
-    height: 36px;
-}
-
-.container-search__title{
+.section-search__title{
     font-size: 32px;
     letter-spacing: 1.2px;
     color: #3d3d3d;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
+
 
 .form{
     margin-top: 16px;
@@ -124,6 +120,7 @@ body{
     display: inline-block;
     text-decoration: none;
     color: #303030;
+    transition: .3s ease-in-out;
 }
 
 .msg a:hover{
@@ -185,12 +182,12 @@ body{
     letter-spacing: 0.5px;
 }
 
-.weather-wrapper__temperatura{
+.weather-wrapper__temperature{
     flex: 1;
     margin: 22px 0;
 }
 
-.weather-wrapper__temperatura h2{
+.weather-wrapper__temperature h2{
     font-size: 22px;
     text-transform: uppercase;
 }
@@ -209,7 +206,7 @@ body{
     gap: 8px;
 }
 
-.weather-wrapper__minmax, .weather-wrapper__wind, .weather-wrapper__data, .weather-wrapper__umidade{
+.weather-wrapper__minmax, .weather-wrapper__wind, .weather-wrapper__data, .weather-wrapper__humidity{
     font-weight: 600;
     color: inherit;
     margin-bottom: 8px;
@@ -217,7 +214,7 @@ body{
 
 .weather-wrapper__wind span:first-child, 
 .weather-wrapper__data span:first-child, 
-.weather-wrapper__umidade span:first-child{
+.weather-wrapper__humidity span:first-child{
     font-weight: 400;
     color: inherit;
 }
@@ -258,7 +255,7 @@ body{
     margin-bottom: 4px;
 }
 
-.weather-wrapper__weekday .temperatura-minmax{
+.weather-wrapper__weekday .temperature-minmax{
     display: flex;
     flex-wrap: nowrap;
     gap: 8px;
@@ -267,13 +264,13 @@ body{
 
 
 @media (max-width: 450px){
-    .container-search{
+    .section-search{
         margin-top: -140px;
     }
     .section-weather{
         margin-top: 165px;
     }
-    .weather-wrapper__weekday .weather-wrapper__dia:last-child{
+    .weather-wrapper__day:last-child{
         /* flex: 1; */
         display: flex;
         flex-direction: column;
@@ -285,7 +282,7 @@ body{
 }
 
 @media (max-width: 360px){
-    .weather-wrapper__weekday .weather-wrapper__dia:last-child, .weather-wrapper__weekday .weather-wrapper__dia:nth-child(4){
+    .weather-wrapper__day:last-child, .weather-wrapper__day:nth-child(4){
         display: flex;
         flex-direction: column;
         justify-content: center;

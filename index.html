@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watchtime</title>
-    <link rel="shortcut icon" href="./assets//img/logo.svg" type="image/svg">
+    <title>Watchtime - Veja como está o tempo na sua cidade</title>
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/svg">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -14,15 +14,15 @@
 
     <main class="welcome loading">
 
-        <section class="container-search">
-            <div class="container-search__group">
-                <h1 class="container-search__title">Buscar cidade</h1>
+        <section class="section-search">
+            <div class="section-search__container">
+                <h1 class="section-search__title">Buscar cidade</h1>
             </div>
             <form class="form">
                 <div class="form__group">
-                    <input type="text" class="form__search" placeholder="Insira o nome da sua cidade">
+                    <input type="text" class="form__search" placeholder="Digite o nome da sua cidade">
                     <button type="submit" class="form__submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -46,10 +46,10 @@
                     </svg>
                 </div>
                 <div class="weather-wrapper__city">
-                    <h3 title="Nome da cidade">Niterói, Rj - Brasil</h3>
+                    <h3 title="Localização">Niterói, Rj - Brasil</h3>
                 </div>
 
-                <div class="weather-wrapper__temperatura">
+                <div class="weather-wrapper__temperature">
                     <h2 title="Temperatura & condição do tempo">20ºC Nublado</h2>
                 </div>
 
@@ -57,8 +57,7 @@
                     <div class="weather-wrapper__col">
                         <div class="weather-wrapper__minmax">
                             <span class="min" title="Temperatura minima">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="icon icon-tabler icon-tabler-arrow-narrow-down" width="24" height="24"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                     stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -69,8 +68,7 @@
                                 <span>16º</span>
                             </span>
                             <span class="max" title="Temperatura maxima">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="icon icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                     stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -94,7 +92,7 @@
                             <span>Data</span>
                             <span class="value">00/00/0000</span>
                         </div>
-                        <div class="weather-wrapper__umidade" title="Umidade do ar">
+                        <div class="weather-wrapper__humidity" title="Umidade do ar">
                             <span>Umidade</span>
                             <span class="value">89%</span>
                         </div>
@@ -103,35 +101,36 @@
 
 
                 <div class="weather-wrapper__weekday" title="Minima e maxima da temperatura nos dias de semana">
-                    <div class="weather-wrapper__dia">
+                    <div class="weather-wrapper__day">
                         <div class="dayName">Terça</div>
-                        <div class="temperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                        <div class="temperature-minmax"><span class="min">18º</span><span class="max">25º</span></div>
                     </div>
-                    <div class="weather-wrapper__dia">
+                    <div class="weather-wrapper__day">
                         <div class="dayName">Quarta</div>
-                        <div class="temperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                        <div class="temperature-minmax"><span class="min">18º</span><span class="max">25º</span></div>
                     </div>
-                    <div class="weather-wrapper__dia">
+                    <div class="weather-wrapper__day">
                         <div class="dayName">Quinta</div>
-                        <div class="temperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                        <div class="temperature-minmax"><span class="min">18º</span><span class="max">25º</span></div>
                     </div>
-                    <div class="weather-wrapper__dia">
+                    <div class="weather-wrapper__day">
                         <div class="dayName">Sexta</div>
-                        <div class="temperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                        <div class="temperature-minmax"><span class="min">18º</span><span class="max">25º</span></div>
                     </div>
-                    <div class="weather-wrapper__dia">
+                    <div class="weather-wrapper__day">
                         <div class="dayName">Sábado</div>
-                        <div class="temperatura-minmax"><span class="min">18º</span><span class="max">25º</span></div>
+                        <div class="temperature-minmax"><span class="min">18º</span><span class="max">25º</span></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="./assets/js/app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="./assets/js/app.js"></script>
+
 </body>
 
 </html>

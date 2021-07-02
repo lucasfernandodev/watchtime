@@ -8,13 +8,13 @@ const searchIp = document.querySelector('.searchIp');
 const weather = document.querySelector('.weather-wrapper');
 const _close = weather.querySelector('.weather-wrapper__close')
 const weather__cityName = weather.querySelector('.weather-wrapper__city h3')
-const weather__temperatura = weather.querySelector('.weather-wrapper__temperatura h2')
+const weather__temperature = weather.querySelector('.weather-wrapper__temperature h2')
 const weather__min = weather.querySelector('.weather-wrapper__minmax .min span')
 const weather__max = weather.querySelector('.weather-wrapper__minmax .max span')
-const weather__humidity = weather.querySelector('.weather-wrapper__umidade .value');
+const weather__humidity = weather.querySelector('.weather-wrapper__humidity .value');
 const weather__data = weather.querySelector('.weather-wrapper__data .value');
 const weather__wind = weather.querySelector('.weather-wrapper__wind .value');
-const weather__weekday = weather.querySelectorAll('.weather-wrapper__dia');
+const weather__weekday = weather.querySelectorAll('.weather-wrapper__day');
 
 
 function closeSectionResultWeather() {
@@ -71,7 +71,7 @@ async function searchWeather(event, userIP = false) {
         main.classList.remove('loading');
 
         weather__cityName.innerHTML = response.city;
-        weather__temperatura.innerHTML = `${response.temp}ºC ${response.description}`;
+        weather__temperature.innerHTML = `${response.temp}ºC ${response.description}`;
         weather__humidity.innerHTML = `${response.humidity}%`;
         weather__data.innerHTML = `${response.date}`
         weather__wind.innerHTML = `${response.wind_speedy}`
