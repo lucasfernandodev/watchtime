@@ -155,6 +155,7 @@ body{
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
+    color: #444;
 }
 
 .weather-wrapper__close{
@@ -210,7 +211,7 @@ body{
 
 .weather-wrapper__minmax, .weather-wrapper__wind, .weather-wrapper__data, .weather-wrapper__umidade{
     font-weight: 600;
-    color: #444;
+    color: inherit;
     margin-bottom: 8px;
 }
 
@@ -218,7 +219,7 @@ body{
 .weather-wrapper__data span:first-child, 
 .weather-wrapper__umidade span:first-child{
     font-weight: 400;
-    color: #444;
+    color: inherit;
 }
 
 .weather-wrapper__minmax{
@@ -263,13 +264,7 @@ body{
     gap: 8px;
 }
 
-.loading p, .loading span,.loading h2, .loading h3, .loading .dayName{
-    background: #444;
-    color: #444;
-    user-select: none;
-    pointer-events: none;
-    animation: placeholder .6s ease-in alternate infinite;
-}
+
 
 @media (max-width: 450px){
     .container-search{
@@ -304,6 +299,14 @@ body{
     overflow: hidden;
     position: absolute;
     display: none;
+}
+
+.loading p, .loading span,.loading h2, .loading h3, .loading .dayName{
+    background: #555;
+    color: #555 !important;
+    user-select: none;
+    pointer-events: none;
+    animation: placeholder .6s ease-in-out alternate infinite;
 }
 
 @keyframes placeholder {
